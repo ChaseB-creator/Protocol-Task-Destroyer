@@ -1,0 +1,71 @@
+{
+  "name": "protocol-task-destroyer",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Dynamic Gold and Black Spaceship Task Manager",
+  "main": "electron/main.cjs",
+  "type": "module",
+  "author": "Open Source Community",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "electron:dev": "concurrently \"vite\" \"electron .\"",
+    "electron:start": "electron .",
+    "build:electron": "npm run build && electron-builder",
+    "package:win": "npm run build && electron-builder --win portable",
+    "package:linux": "npm run build && electron-builder --linux AppImage",
+    "package:mac": "npm run build && electron-builder --mac",
+    "package:all": "npm run build && electron-builder -mwl"
+  },
+  "build": {
+    "appId": "com.protocoltaskdestroyer.app",
+    "productName": "Protocol: Task Destroyer",
+    "directories": {
+      "output": "release"
+    },
+    "compression": "maximum",
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "public/**/*"
+    ],
+    "win": {
+      "target": [
+        "portable"
+      ],
+      "icon": "public/favicon.svg"
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Office",
+      "icon": "public/favicon.svg"
+    },
+    "mac": {
+      "target": [
+        "dmg"
+      ],
+      "category": "public.app-category.productivity",
+      "icon": "public/favicon.svg"
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "canvas-confetti": "^1.9.4",
+    "concurrently": "^10.0.7",
+    "electron": "^45.3.4",
+    "electron-builder": "^26.18.0",
+    "lucide-react": "^1.74.0",
+    "oxlint": "^1.90.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "vite": "^8.3.6"
+  }
+}

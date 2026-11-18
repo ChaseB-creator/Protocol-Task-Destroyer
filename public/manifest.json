@@ -1,0 +1,17 @@
+{
+  "name": "Protocol: Task Destroyer",
+  "short_name": "TaskDestroyer",
+  "description": "Dynamic Gold and Black Spaceship Task Manager",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#050608",
+  "theme_color": "#FFD700",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
