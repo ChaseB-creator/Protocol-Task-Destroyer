@@ -241,7 +241,7 @@ export default function DirectoryBoard({
             Protocol: Task Destroyer
           </h1>
 
-          <p style={{
+         {/* <p style={{
             fontFamily: 'var(--font-body)',
             fontSize: '1.15rem',
             color: 'var(--space-text-dim)',
@@ -250,7 +250,9 @@ export default function DirectoryBoard({
             letterSpacing: '0.04em',
           }}>
             Dynamic Gold & Black Mission Control • Drag-and-Drop Taskboards • Confetti Celebrations
-          </p>
+          </p> 
+         */}
+         
         </div>
 
         {/* BELOW CENTER TOP ON THE FAR LEFT: Creation and Deletion buttons */}
