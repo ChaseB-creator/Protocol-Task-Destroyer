@@ -2,6 +2,20 @@
 
 > A free, open-source, fully dynamic task manager web application with a glowing **Gold & Black** spaceship HUD aesthetic, cross-platform desktop executables, drag-and-drop task boards, confetti celebrations, and complete customization.
 
+
+
+
+
+
+# Example Images of the App
+
+<img width="1004" height="618" alt="Screenshot 2026-11-18 185725" src="https://github.com/user-attachments/assets/8c4c67b3-f27f-4b20-bba6-f82edb0f4d70" />
+
+
+<img width="1010" height="616" alt="Screenshot 2026-11-18 185809" src="https://github.com/user-attachments/assets/ade122dd-5743-4a7e-bffe-e807d00fac92" />
+
+
+
 ---
 
 ## ✨ Features
